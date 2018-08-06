@@ -7,6 +7,6 @@ function tasknormal(currentTick){
     print('sou tasknormal!');
 }
 
-function taskloop(){
+function taskloop(currentTick){
     print('sou taskloop');
 }
