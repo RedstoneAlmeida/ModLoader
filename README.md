@@ -59,3 +59,11 @@ function PlayerJoinEvent(event){
 // function BlockBreakEvent(event){}
 // ready, start your server and test!
 ```
+
+- Create Config
+```javascript
+var config = manager.createConfig(manager.getFile("folder", "archive"), 2); // 2 = Config.YAML
+
+config.set("key", "value");
+config.save();
+```
