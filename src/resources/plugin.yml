@@ -1,0 +1,6 @@
+name: ModLoader
+api: "1.0.0"
+main: mod.loader.Loader
+author: Redstone
+version: "1.0"
+description: foda
