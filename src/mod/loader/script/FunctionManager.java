@@ -2,9 +2,13 @@ package mod.loader.script;
 
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
+import cn.nukkit.plugin.Plugin;
 import cn.nukkit.scheduler.Task;
 import cn.nukkit.scheduler.TaskHandler;
+import cn.nukkit.utils.Config;
 import mod.loader.Loader;
+
+import java.io.File;
 
 public class FunctionManager {
 
@@ -12,6 +16,16 @@ public class FunctionManager {
 
     public FunctionManager(Loader plugin){
         this.plugin = plugin;
+    }
+
+    public File getFile(String folder, String archive){
+        File file = new File(plugin.getDataFolder() + "/" + folder + "/");
+        file.mkdir();
+        return new File(plugin.getDataFolder() + "/" + folder + "/" + archive);
+    }
+
+    public Config createConfig(File file, int type){
+        return new Config(file, type);
     }
 
     public void createCommand(String name, String description, String functionName){
@@ -28,6 +42,10 @@ public class FunctionManager {
 
     public void cancelTask(int id){
         plugin.getServer().getScheduler().cancelTask(id);
+    }
+
+    public Plugin getPlugin(String name){
+        return plugin.getServer().getPluginManager().getPlugin(name);
     }
 
     public String time(int seconds){
