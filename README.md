@@ -7,7 +7,7 @@ Nukkit plugin, enable to load javascript! very simple create systems!!
 - Create your code!
 - Start your server! Instantly run
 
-- Refs: https://github.com/RedstoneAlmeida/ModLoader/exemples
+- Refs: https://github.com/RedstoneAlmeida/ModLoader/tree/master/exemples
 
 # Basic JavaScript API loaded!
 - Global Variables:
