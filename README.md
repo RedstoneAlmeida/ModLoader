@@ -44,7 +44,7 @@ function tasknormal(currentTick){
     print('I tasknormal!');
 }
 
-function taskloop(){
+function taskloop(currentTick){
     print('I taskloop');
 }
 ```
