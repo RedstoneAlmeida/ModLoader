@@ -16,6 +16,7 @@ var server; return getServer();
 var plugin; return ModLoader Plugin MainClass;
 var manager; return FunctionManager Class, Using to create Commands e Loops
 var logger; return Console Logger Input
+var players; return All Online Players
 ```
 
 - Create Basic Command:
