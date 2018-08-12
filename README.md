@@ -25,7 +25,7 @@ manager.createCommand("name", "description", "functionUsed");
 
 
 function functionUsed(sender, args){
-    if(args.lenght < 1){ // see args exists
+    if(args.length < 1){ // see args exists
         sender.sendMessage('You used incorrect!');
         return;
     }
