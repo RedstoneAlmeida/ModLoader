@@ -3,7 +3,7 @@ manager.createCommand("name", "descricao do comando", "functiondele");
 // ao digitar o comando!
 
 function functiondele(sender, args){
-    if(args.lenght < 1){ // praticamente o isset do PHP
+    if(args.length < 1){ // praticamente o isset do PHP
         sender.sendMessage('Você digitou incorretamente');
         return;
     }
