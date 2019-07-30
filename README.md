@@ -1,8 +1,8 @@
 # ModLoader
 Nukkit plugin, enable to load javascript! very simple create systems!!
-
+Nukkit plugin - Allows you to load Javascript modules! 
 # How to use?
-- Create javascript archive, exemple: mod.js
+- Create javascript archive, example: mod.js
 - Drop archive in plugins/ModLoader/mod.js
 - Create your code!
 - Start your server! Instantly run
